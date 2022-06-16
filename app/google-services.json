@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "703937273971",
+    "project_id": "technician-cffd2",
+    "storage_bucket": "technician-cffd2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:703937273971:android:5ea868ade0385722868a06",
+        "android_client_info": {
+          "package_name": "com.george.optica_technicianapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "703937273971-eitkk7pukduuf0mrg0m26c9hljqo0dfb.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.george.optica_technicianapplication",
+            "certificate_hash": "9163414f96c24c7ce7ea1abb9b2fe26729bc024e"
+          }
+        },
+        {
+          "client_id": "703937273971-2hn5s9n640e4lb4cm73r9t58hog21qpp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBjqkG31NfvRDToBz4vRbUoTti6KCJMvHY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "703937273971-2hn5s9n640e4lb4cm73r9t58hog21qpp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UI.Activities.Authentication.LoginActivity"
+    tools:ignore="SpUsage">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:focusableInTouchMode="true"
+                android:background="@drawable/rectangle">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="50dp"
+                    android:fontFamily="@font/comfortaa"
+                    android:text="@string/optica_technicians"
+                    android:textColor="@color/yellow"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="-50dp"
+                android:contentDescription="@string/optica_logo"
+                android:src="@drawable/optica_logo_1" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp">
+
+                <TextView
+                    android:id="@+id/emailTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/comfortaa"
+                    android:text="@string/email"
+                    android:textColor="@color/dark_blue"
+                    android:textSize="14dp" />
+
+                <EditText
+                    android:id="@+id/emailInput"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_below="@+id/emailTxt"
+                    android:layout_marginVertical="10dp"
+                    android:autofillHints=""
+                    android:background="@drawable/search_background"
+                    android:drawableStart="@drawable/ic_baseline_perm_identity_24"
+                    android:drawablePadding="10dp"
+                    android:elevation="4dp"
+                    android:fontFamily="@font/comfortaa"
+                    android:hint="@string/email_address"
+                    android:inputType="textEmailAddress"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="10dp"
+                    android:textSize="14dp" />
+
+
+                <TextView
+                    android:id="@+id/passwordTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/emailInput"
+                    android:fontFamily="@font/comfortaa"
+                    android:text="@string/password"
+                    android:textColor="@color/dark_blue"
+                    android:textSize="14dp" />
+
+                <EditText
+                    android:id="@+id/passwordInput"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_below="@+id/passwordTxt"
+                    android:layout_marginVertical="10dp"
+                    android:autofillHints=""
+                    android:background="@drawable/search_background"
+                    android:drawableStart="@drawable/ic_baseline_lock_24"
+                    android:drawablePadding="10dp"
+                    android:elevation="4dp"
+                    android:fontFamily="@font/comfortaa"
+                    android:hint="@string/password"
+                    android:inputType="textPassword"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="10dp"
+                    android:textSize="14dp" />
+
+                <Button
+                    android:id="@+id/loginBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/passwordInput"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/btn_submit_background"
+                    android:fontFamily="@font/comfortaa"
+                    android:text="@string/login"
+                    android:textAllCaps="false"
+                    android:textColor="@color/dark_blue"
+                    android:textSize="14dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/noAccountTxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/loginBtn"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:fontFamily="@font/comfortaa"
+                    android:text="@string/don_t_have_an_account_create_one"
+                    android:textColor="@color/blue"
+                    android:textSize="14dp"
+                    android:textStyle="bold" />
+
+                <!--<Button
+                    android:id="@+id/adminLogin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/noAccountTxt"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/btn_submit_background"
+                    android:fontFamily="@font/comfortaa"
+                    android:text="@string/login_as_admin"
+                    android:textAllCaps="false"
+                    android:textColor="@color/dark_blue"
+                    android:textSize="14dp"
+                    android:textStyle="bold" />-->
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,53 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.OpticaTechnicianApplication" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">@color/white</item>
+        <!-- Customize your theme here. -->
+
+        <!--optica theme. -->
+        <item name="colorPrimary">@color/app_primary_color</item>
+        <item name="colorSecondary">@color/app_secondary_color</item>
+        <item name="colorSecondaryVariant">@color/yellow_btn</item>
+        <item name="colorPrimaryVariant">@color/from_label_color</item>
+        <item name="colorOnSecondary">@color/to_label_color</item>
+
+        <item name="android:windowDisablePreview">true</item>
+    </style>
+
+    <!--Remove the ActionBar-->
+    <style name="Theme.optica.NoActionBar" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+
+    <style name="NavigationDrawerStyle">
+        <item name="android:textSize">17sp</item><!-- text size in menu-->
+        <!-- item padding left in menu-->
+        <item name="android:listPreferredItemPaddingLeft">8dp</item>
+        <item name="listPreferredItemPaddingLeft">8dp</item>
+        <!-- item padding right in menu-->
+        <item name="android:listPreferredItemPaddingRight">8dp</item>
+        <item name="listPreferredItemPaddingRight">8dp</item>
+    </style>
+
+    <!--Adds SearchView Theme Size-->
+    <style name="AppSearchView" parent="Widget.AppCompat.SearchView">
+        <item name="android:textSize" tools:ignore="SpUsage">16dp</item>
+    </style>
+
+    <!--Bottom Navigation Styles-->
+    <style name="BottomNavigationViewTextStyle">
+        <item name="android:fontFamily">@font/comfortaa</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize" tools:ignore="SpUsage">11dp</item>
+    </style>
+
+    <!--LoginTheme & SignUp Themes -->
+    <style name="LoginTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:statusBarColor" tools:targetApi="l">@color/blue</item>
+    </style>
+</resources>

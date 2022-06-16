@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="10dp"
+    android:layout_marginTop="5dp"
+    android:layout_marginEnd="10dp"
+    android:background="@drawable/style_card"
+    android:elevation="4dp"
+    app:cardCornerRadius="10dp"
+    tools:ignore="SpUsage">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:baselineAligned="false"
+        android:orientation="horizontal"
+        android:paddingStart="10dp"
+        android:paddingTop="5dp"
+        android:paddingEnd="10dp"
+        android:paddingBottom="5dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/orderNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:fontFamily="@font/comfortaa_bold"
+                android:text="@string/order_number_placeholder"
+                android:textColor="@color/dark_blue"
+                android:textSize="14dp"
+                android:textStyle="bold"
+                tools:layout_editor_absoluteX="4dp"
+                tools:layout_editor_absoluteY="4dp" />
+
+            <TextView
+                android:id="@+id/timeStarted"
+                android:layout_width="235dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="@string/start"
+                android:textColor="@color/app_primary_color"
+                android:textSize="14dp"
+                android:textStyle="bold"
+                tools:layout_editor_absoluteX="285dp"
+                tools:layout_editor_absoluteY="13dp" />
+
+            <!--            <TextView
+                            android:id="@+id/timeOrderSent"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:drawablePadding="10dp"
+                            android:fontFamily="@font/comfortaa"
+                            android:text="@string/_50_min"
+                            android:textColor="@color/app_secondary_color"
+                            android:textSize="14dp"
+                            android:textStyle="bold"
+                            app:drawableStartCompat="@drawable/mini_time_icon"
+                            tools:layout_editor_absoluteX="203dp"
+                            tools:layout_editor_absoluteY="52dp" />-->
+
+            <TextView
+                android:id="@+id/clearedOrNot"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:drawablePadding="5dp"
+                android:fontFamily="@font/comfortaa_bold"
+                android:text="@string/cleared"
+                android:textColor="@color/to_label_color"
+                android:textSize="14dp"
+                android:textStyle="bold"
+                app:drawableStartCompat="@drawable/check_icon"
+                tools:layout_editor_absoluteX="203dp"
+                tools:layout_editor_absoluteY="52dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:gravity="end"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:fontFamily="@font/comfortaa_bold"
+                android:text="@string/date_placeholder"
+                android:textColor="@color/app_secondary_color"
+                android:textSize="14dp"
+                tools:layout_editor_absoluteX="4dp"
+                tools:layout_editor_absoluteY="4dp" />
+
+            <TextView
+                android:id="@+id/timeStopped"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="@string/stop_timer"
+                android:textColor="@color/app_primary_color"
+                android:textSize="14dp"
+                android:textStyle="bold"
+                tools:layout_editor_absoluteX="285dp"
+                tools:layout_editor_absoluteY="13dp" />
+
+            <!--            <TextView
+                            android:id="@+id/clearedOrNot"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:drawablePadding="10dp"
+                            android:fontFamily="@font/comfortaa_bold"
+                            android:text="@string/cleared"
+                            android:textColor="@color/to_label_color"
+                            android:textSize="14dp"
+                            app:drawableStartCompat="@drawable/check_icon"
+                            tools:layout_editor_absoluteX="203dp"
+                            tools:layout_editor_absoluteY="52dp" />-->
+        </LinearLayout>
+
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>
